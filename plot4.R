@@ -3,8 +3,8 @@
 #Before running this plot, you must source("processData.R")
 
 #Plot 4: unnamed-chunk-5.png
-png("plot4.png")#480 X 480 is default
-par(mfrow=c(2,2))
+png("plot4.png", bg="transparent")#480 X 480 is default
+par(mfrow=c(2,2),bg="transparent")
 
 #  Plot(1,1)
 plot(epc$dateTime, epc$Global_active_power, 

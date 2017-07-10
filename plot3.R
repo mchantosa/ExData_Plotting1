@@ -3,9 +3,9 @@
 #Before running this plot, you must source("processData.R")
 
 #Plot 3: unnamed-chunk-4.png
-par(bg=NA)
+par(bg="transparent")
 par(mfrow=c(1,1))
-png("plot3.png")#480 X 480 is default
+png("plot3.png", bg="transparent")#480 X 480 is default
 plot(epc$dateTime, epc$Sub_metering_1, 
      type = "l",
      ylab = "Energy sub metering",
